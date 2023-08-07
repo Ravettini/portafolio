@@ -1,0 +1,578 @@
+body{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Trispace', sans-serif;
+    
+}
+
+
+@media(max-width:400px){
+    .venus{
+        margin-top: 20px;
+    }
+    
+    .proyectos img{
+        height: 150px;
+        width: 300px;
+    }
+}
+
+
+@media(min-width:1200px){
+    body{
+        font-size: 10px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-brand{
+        font-size: 19px;
+    }
+    .parrafo{
+        padding: 40px;
+        font-size: 15px;
+    }
+    .world-subtitulo{
+        font-size: 15px;
+        
+    }
+
+    .proyectos img{
+            height: 200px;
+            width: 400px;
+    }
+}
+
+@media(max-width:990px){
+    .navbar-nav{
+        background-color: #33383b;
+    }
+}
+
+@media(min-width:501px){
+    .proyectos img{
+        height: 200px;
+        width: 400px;
+    
+}
+
+}
+
+
+
+@media(max-width:500px){
+    body{
+        background-position: center;
+
+        font-size: 10px;
+    }
+
+    .navbar-nav{
+        background-color: #33383b;
+    }
+
+    .navbar-brand{
+        font-size: 13px;
+    }
+
+    .parrafo{
+        
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .world-subtitulo{
+        font-size: 10px;
+    }
+
+    .proyectos img{
+        height: 150px;
+        width: 300px;
+    }
+    
+}
+
+.imagen img{
+    height: 200px;
+    width: 200px;
+}
+
+
+
+
+
+
+.container-img img{
+    border: 8px solid lightblue;
+    border-radius: 100px;
+}
+
+.container-img h2{
+    font-family: 'Orbitron', sans-serif;
+    
+    margin: 10px auto;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-img p{
+    font-size: 15px;
+}
+
+.container-img{
+    padding-top: 50px;
+}
+
+.borde-img{
+    border: 1px solid white;
+    margin: 0 auto;
+    border: 1px solid rgba(250, 250, 250, 0.651);
+    margin-top: 38px;
+    box-shadow: 0px 0px  10px rgb(255, 255, 255);
+}
+
+.iconos-img a{
+    margin-right: 10px;
+    font-size: 30px;
+    color: white;
+    border-radius: 100px;
+    border: 1px solid white;
+    padding: 5px 14px;
+}
+
+.iconos-img a:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+
+/* partes nav */
+
+
+.borde{
+    border: 1px solid rgba(250, 250, 250, 0.651);
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 0px 0px  10px rgb(255, 255, 255);
+}
+
+.navbar-brand{
+    margin-left: 2.6%;
+}
+
+.navxd{
+    display: flex;
+    justify-content: right;
+}
+
+.nav-link{
+    margin-right: 25px;
+    font-size: 19px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+
+
+/* habilidades */
+
+.presentacion{
+    padding-top: 100px;
+}
+
+.textos span{
+    font-size: 20px ;
+    background-color: #1e26a0;
+}
+
+
+
+.world, .jupiter, .marte, .venus{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: inset 0px 0px 20px #000,
+                inset -40px -10px 20px rgba(3,32,56,0.7),
+                0px 0px 100px black;
+    animation: world 10s linear infinite;
+}
+
+.venus{
+    background: url(../img/venus.jpg);
+    background-size: cover;
+}
+
+.jupiter{
+    background: url(../img/jupiter.jpg);
+    background-size: cover;
+}
+
+.world{
+    background: url(../img/neptuno.jpg);
+    background-size: cover;
+}
+
+.marte{
+    background: url(../img/marte.jpg);
+    background-size: cover;
+}
+
+@keyframes world {
+    0%{
+        background-position-x:0;
+    }
+
+    100%{
+        background-position-x:-800px;
+    }
+
+}
+
+
+
+
+
+.planetas{
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* prueba */
+
+.world-body{
+    width: 100%;
+    height: 250px;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+}
+
+.world-titulo{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.world-subtitulo{
+    
+    
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+.world:hover .world-body{
+    right: 0;
+}
+
+.jupiter:hover .world-body{
+    right: 0;
+}
+
+.marte:hover .world-body{
+    right: 0;
+}
+
+.venus:hover .world-body{
+    right: 0;
+}
+
+
+/* parte proyectos */
+
+.proyectos{
+    flex-wrap: wrap ;
+}
+
+.proyectos img{
+    
+    border: 5px  solid rgb(162, 172, 219);
+    border-radius: 5px;
+}
+
+.proyecto:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* footer */
+
+footer{
+    bottom: 0;
+}
+
+
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    
+}
+
+
+
+.footer-distributed {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+  
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #00b7ff;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.fa-brands{
+    padding: 0;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #0099ff;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}       
+
+
+/* contacto */
+
+.contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+}
+
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+
+.texto-contacto span{
+    font-size: 20px ;
+    background-color: #3b42a1;
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.boton-contacto{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.boton-contacto:hover{
+    background-color: #1d323f;
+    transition: 1s;
+}
+
+label, i{
+    padding-right: 5px;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label
+{
+    top: -35px;
+    font-size: 14px;
+}
