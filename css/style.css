@@ -1,7 +1,35 @@
-body{
+:root{
+    --color_1:#cfe0e8;
+    --color_2: #b7d7e8;
+    --color_3: #154157;
+    --color_4: #daebe8; 
+}
+
+.home{
     background-image: url(../img/fondo.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+.habilidades{
+    background-color: #143b4e ;
+}
+
+.about-me{
+    background-color: var(--color_3);
+}
+
+.proyectos-diplomas{
+    background-color: #0d2835 ;
+}
+
+.contacto-section{
+    background-color: #031d2b ;
+}
+
+body{
+    
     font-family: 'Trispace', sans-serif;
     
 }
@@ -18,6 +46,9 @@ body{
     }
 }
 
+.parrafo{
+    margin-bottom: 0;
+}
 
 @media(min-width:1200px){
     body{
@@ -103,6 +134,10 @@ body{
 
 
 
+.container-img{
+    position: relative;
+    z-index: 2;
+}
 
 
 
@@ -204,8 +239,8 @@ header{
     border-radius: 50%;
     background-size: cover;
     box-shadow: inset 0px 0px 20px #000,
-                inset -40px -10px 20px rgba(3,32,56,0.7),
-                0px 0px 100px black;
+                inset -40px -10px 20px rgba(3,32,56,0.7);
+                
     animation: world 10s linear infinite;
 }
 
@@ -253,6 +288,45 @@ header{
     position: relative;
 }
 
+
+.diplomas-cards{
+    padding-top: 50px;
+}
+
+.carrd{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.diplomas-cards img{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.empujarlogo img{
+    width: 170px;
+    height: 130px;
+}
+
+.diplomas-cards span{
+    color: red;
+}
+
+
+.diplomas-cards h5, p{
+    padding: 5px;
+    color: white;
+}
+
+.diplomas-cards h5{
+    font-size: 15px;
+}
 
 /* prueba */
 
@@ -575,4 +649,106 @@ textarea:valid~label
 {
     top: -35px;
     font-size: 14px;
+}
+
+
+#particles-js{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+/* 
+spikes */
+
+.spikes {
+    position: relative;
+    background: #2c3e50;
+    height:0vh;
+}
+
+
+
+.spikes::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 80px;
+    background-size: 80px 100%;
+    background-image: linear-gradient(135deg, #0b2641 25%, transparent 25%), linear-gradient(225deg, #0b2641 25%, transparent 25%);
+    background-position: 0 0;
+}
+
+.spikes2 {
+    position: relative;
+    background: #2c3e50;
+    height:0vh;
+}
+
+
+
+.spikes2::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 80px;
+    background-size: 80px 100%;
+    background-image: linear-gradient(135deg, #154157 25%, transparent 25%), linear-gradient(225deg, #154157 25%, transparent 25%);
+    background-position: 0 0;
+}
+
+
+.container-wave {
+    position: relative;
+    background-color: #143b4e ;
+    height: 10vh;
+}
+
+.wave {
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    background-color: #143b4e ;
+    bottom: 0;
+}
+
+.wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+}
+
+.wave::after {
+    width: 55%;
+    height: 100%;
+    background-color: #143b4e ;
+    left: -1.5%;
+    top: 40%;
+}
+
+.curved {
+    position: relative;
+    background: #0d2835;
+    height: 10vh;
+}
+
+.curved::after {
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #031d2b;
+    height: 30%;
 }
