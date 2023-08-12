@@ -23,6 +23,16 @@ window.addEventListener('click', ()=>{
     var click = window.click
 }) 
 
+const proyectos = document.getElementById("proyectos")
+    proyectos.innerHTML += `
+    <div class="proyecto"><a target="_blank" href="https://spaceweb1.netlify.app"><img src="img/spaceweb.JPG" alt=""></a> <h2 class="text-white">SpaceWeb</h2> <p class="text-white">Pagina dedicada a el sistema solar y datos sobre cada planeta.</p></div>
+    <div class="proyecto"><a target="_blank" href="https://codemusic1.netlify.app"><img src="img/code music.JPG" alt=""></a> <h2 class="text-white">CodeMusic</h2> <p class="text-white">Ecommerce de musica <span> (realizado en grupo) </span> como proyecto integrador.  </p></div>
+    <div class="proyecto"><a target="_blank" href="https://canejoven.netlify.app"><img src="img/factum.JPG" alt=""></a> <h2 class="text-white">Factum</h2> <p class="text-white">Pagina creada para la muestra de arte 2022 del Instituto Miguel Cane.</p>
+    
+    
+    </div>
+    `;
+
 
 const diploCards = document.getElementById("diploCards")
     diploCards.innerHTML += `
@@ -31,7 +41,7 @@ const diploCards = document.getElementById("diploCards")
     <img src="./img/unlam-logo.png" alt="">
     <div class="carrd-body">
         <h5 class="carrd-title">Tecnicatura en desarrollo web</h5>
-        <p class="carrd-text">Unlam - 2023 - <span> En progreso </span> </p>
+        <p class="carrd-text">Unlam - 2023 - <span class="enProgreso"> En progreso </span> </p>
     </div>
 </div>
     
@@ -40,18 +50,48 @@ const diploCards = document.getElementById("diploCards")
     <img src="./img/utn-logo.png" alt="">
     <div class="carrd-body">
         <h5 class="carrd-title">Diplomatura Desarrollo web Full-Stack</h5>
-        <p class="carrd-text">UTN - 2023 - <span> En progreso </span> </p>
+        <p class="carrd-text">UTN - 2023 - <span class="enProgreso"> En progreso </span> </p>
     </div>
 </div>
 
 <div class="carrd">
-
 <div class="empujarlogo"> 
     <img src="./img/empujar-logo.png" alt="">
 </div>
     <div class="carrd-body">
         <h5 class="carrd-title">Capacitacion</h5>
-        <p class="carrd-text">Fundacion Empuar - 2023 - <span> En progreso </span></p>
+        <p class="carrd-text">Fundacion Empujar - 2023 - <span class="enProgreso"> En progreso </span></p>
+    </div>
+</div>
+
+<div class="carrd">
+        <div class="aplogo">
+            <img src="./img/approgramando.png" alt="">
+        </div>
+<div class="diploma">
+<img src="./img/diploma1.jpg" onclick="expandirImagen(this)" class="imagen-expansible">
+</div>
+    <div class="carrd-body">
+        <h5 class="carrd-title">Curso desarrollo web 1</h5>
+        <p class="carrd-text">GOB CBA - 2022 - <span class="finalizado"> Finalizado </span> </p>
+    </div>
+</div>
+
+<div class="carrd">
+<div class="aplogo">
+    <img src="./img/approgramando.png" alt="">
+</div>
+
+<div class="diploma">
+<img src="./img/diploma2.jpg" onclick="expandirImagen(this)" class="imagen-expansible">
+</div>
+    <div class="carrd-body">
+        <h5 class="carrd-title">Curso desarrollo web 2</h5>
+        <p class="carrd-text">GOB CBA - 2022 - <span class="finalizado"> Finalizado </span> </p>
     </div>
 </div>
     `;
+
+    function expandirImagen(imagen) {
+        imagen.classList.toggle("expandida");
+    }

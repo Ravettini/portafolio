@@ -44,6 +44,10 @@ body{
         height: 150px;
         width: 300px;
     }
+
+    .carrd{
+        width: 60%;
+    }
 }
 
 .parrafo{
@@ -70,6 +74,10 @@ body{
     .world-subtitulo{
         font-size: 15px;
         
+    }
+
+    .carrd{
+        width: 30%;
     }
 
     .proyectos img{
@@ -298,6 +306,7 @@ header{
     padding: 20px;
     border-radius: 5px;
     margin-top: 20px;
+    
 }
 
 .diplomas-cards img{
@@ -314,10 +323,44 @@ header{
     height: 130px;
 }
 
-.diplomas-cards span{
+.aplogo img{
+    width: 200px;
+}
+
+@media(max-width:400px){
+    .diploma img{
+        height: 115px;
+        width: 150px;
+    }
+}
+
+@media(min-width:1200px){
+    .diploma img{
+        height: 135px;
+        width: 200px;
+    }
+}
+
+.imagen-expansible {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.imagen-expansible.expandida {
+    transform: scale(2.5);
+}
+
+
+
+.enProgreso {
     color: red;
 }
 
+
+
+.finalizado{
+    color: rgb(0, 238, 0);
+}
 
 .diplomas-cards h5, p{
     padding: 5px;
@@ -382,6 +425,19 @@ header{
 
 .proyectos{
     flex-wrap: wrap ;
+}
+
+.proyecto h2{
+    font-size: 20px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    
+}
+
+.proyecto p{
+    font-size: 10px;
+    width: 300px;
+    padding: 0; 
 }
 
 .proyectos img{
