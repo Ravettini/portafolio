@@ -216,9 +216,15 @@ body{
 }
 
 .nav-link{
-    margin-right: 25px;
+    margin-right: 10px;
     font-size: 19px;
 }
+
+.navxd a{
+    width: 130px;
+}
+
+
 
 header{
     position: fixed;
