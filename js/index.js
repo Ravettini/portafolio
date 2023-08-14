@@ -23,6 +23,75 @@ window.addEventListener('click', ()=>{
     var click = window.click
 }) 
 
+
+const habCards = document.getElementById("habCards")
+    habCards.innerHTML += `
+    <div class="habilidad-card">
+        <img src="./img/html.png" alt="html">
+            <div class="habilidad-info">
+                <p class="text-white text-center"> HTML </p>
+            </div>
+    </div>
+
+    <div class="habilidad-card">
+        <img src="./img/css.png" alt="html">
+            <div class="habilidad-info">
+                <p class="text-white text-center"> CSS </p>
+            </div>
+    </div>
+
+    <div class="habilidad-card">
+        <img src="./img/jslogo.png" alt="html">
+            <div class="habilidad-info">
+                <p class="text-white text-center"> Js </p>
+            </div>
+    </div>
+
+    <div class="habilidad-card">
+        <img src="./img/bootstrap.png" alt="html">
+            <div class="habilidad-info">
+                <p class="text-white text-center"> BOOTSTRAP </p>
+            </div>
+    </div>
+
+    <div class="habilidad-card">
+        <img src="./img/github.png" alt="html">
+            <div class="habilidad-info">
+                <p class="text-white text-center"> GITHUB </p>
+            </div>
+    </div>
+
+    <div class="habilidad-card">
+        <img src="./img/mongo.png" alt="html">
+            <div class="habilidad-info">
+                <p class="text-white text-center"> MONGODB </p>
+            </div>
+    </div>
+
+    <div class="habilidad-card">
+        <img src="./img/react.png" alt="html">
+            <div class="habilidad-info">
+                <p class="text-white text-center"> REACTJS </p>
+            </div>
+    </div>
+
+    <div class="habilidad-card">
+        <img src="./img/angular.png" alt="html">
+            <div class="habilidad-info">
+                <p class="text-white text-center"> ANGULAR </p>
+            </div>
+    </div>
+
+    <div class="habilidad-card">
+        <img src="./img/node.png" alt="html">
+            <div class="habilidad-info">
+                <p class="text-white text-center"> NODEJS </p>
+            </div>
+    </div>
+
+
+    `
+
 const proyectos = document.getElementById("proyectos")
     proyectos.innerHTML += `
     <div class="proyecto"><a target="_blank" href="https://spaceweb1.netlify.app"><img src="img/spaceweb.JPG" alt=""></a> <h2 class="text-white">SpaceWeb</h2> <p class="text-white">Pagina dedicada a el sistema solar y datos sobre cada planeta.</p></div>
@@ -59,7 +128,7 @@ const diploCards = document.getElementById("diploCards")
     <img src="./img/empujar-logo.png" alt="">
 </div>
     <div class="carrd-body">
-        <h5 class="carrd-title">Capacitacion</h5>
+        <h5 class="carrd-title">Capacitacion laboral</h5>
         <p class="carrd-text">Fundacion Empujar - 2023 - <span class="enProgreso"> En progreso </span></p>
     </div>
 </div>

@@ -54,7 +54,7 @@ body{
     margin-bottom: 0;
 }
 
-@media(min-width:1200px){
+@media(min-width:1000px){
     body{
         font-size: 10px;
     }
@@ -89,6 +89,9 @@ body{
 @media(max-width:990px){
     .navbar-nav{
         background-color: #33383b;
+    }
+    .carrd{
+        width: 60%;
     }
 }
 
@@ -206,6 +209,17 @@ body{
     box-shadow: 0px 0px  10px rgb(255, 255, 255);
 }
 
+.textos a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+    transition: 0.5s;
+}
+
+.textos a:hover{
+    color: red;
+}
+
 .navbar-brand{
     margin-left: 2.6%;
 }
@@ -232,6 +246,30 @@ header{
     z-index: 100;
 }
 
+
+/* habilidades cards */
+
+.habilidades-cards img{
+    height: 50px;
+    width: 100%;
+}
+
+.habilidades-cards{
+    gap: 50px;
+}
+
+
+
+.habilidad-card{
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.habilidad-card p{
+    margin: 0;
+    font-size: 8px;
+}
 
 
 /* habilidades */
@@ -333,7 +371,7 @@ header{
     width: 200px;
 }
 
-@media(max-width:400px){
+@media(max-width:1199px){
     .diploma img{
         height: 115px;
         width: 150px;
